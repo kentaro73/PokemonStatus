@@ -16,6 +16,13 @@ class StatusesController < ApplicationController
     end
   end
 
+  def question_s
+    @status = Status.find(rand(Status.count) + 1)
+    @answer_s = @status.s
+    # numbers = [1,2,3,4,5]
+    # new_numbers = numbers.map { |n| n*10 } 
+  end
+
   private
 
     def status_params

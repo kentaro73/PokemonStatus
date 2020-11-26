@@ -1,0 +1,9 @@
+.text-center
+  h1 次のポケモンの素早さ種族値を答えなさい
+
+  .mb-3
+  p.question_s= "#{@status.name}"
+
+  p.answer_s= "#{@answer_s}"
+
+  p= link_to "次へ", "/question_s"
