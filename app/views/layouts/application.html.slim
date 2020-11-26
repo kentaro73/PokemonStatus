@@ -9,7 +9,7 @@ html
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   body
     .app-title.navbar.navbar-expand-md.navbar-light.bg-light
-      .navbar-brand LS
+      .navbar-brand= link_to 'LS', root_path
 
       ul.navbar-nav.ml-auto
         li.nav-item= link_to "種族値を確認しにいく", "https://pente.koro-pokemon.com/data/ranking-total.shtml", target: :brank
