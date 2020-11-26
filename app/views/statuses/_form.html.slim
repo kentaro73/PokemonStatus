@@ -1,0 +1,27 @@
+- if status.errors.present? 
+  ul#error_explanation.text-danger
+    - status.errors.full_messages.each do |msg|
+      li = msg
+= form_with model: @status, local: true do |f|
+  .form-group
+    = f.label :name
+    = f.text_field :name, class: 'form-control'
+  .form-group
+    = f.label :h
+    = f.number_field :h, class: 'form-control'
+  .form-group
+    = f.label :a
+    = f.number_field :a, class: 'form-control'
+  .form-group
+    = f.label :b
+    = f.number_field :b, class: 'form-control'
+  .form-group
+    = f.label :c
+    = f.number_field :c, class: 'form-control'
+  .form-group
+    = f.label :d
+    = f.number_field :d, class: 'form-control'
+  .form-group
+    = f.label :s
+    = f.number_field :s, class: 'form-control'
+  = f.submit '登録', class: 'btn btn-primary'

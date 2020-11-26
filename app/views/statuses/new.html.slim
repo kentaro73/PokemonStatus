@@ -1,2 +1,4 @@
-h1 Statuses#new
-p Find me in app/views/statuses/new.html.slim
+.text-center
+  h1 ポケモン登録
+
+= render partial: 'form', locals: { status: @status }

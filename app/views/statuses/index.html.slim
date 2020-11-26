@@ -1,2 +1,30 @@
-h1 Statuses#index
-p Find me in app/views/statuses/index.html.slim
+.text-center
+  h1 種族値を覚えよう
+
+.nav.justify-content-end
+  = link_to '登録する', new_status_path, class: 'btn btn-primary'
+
+.mb-3
+
+table.table.table-hover.table-dark
+  thead
+    tr
+      th.col ポケモン
+      th.col H
+      th.col A
+      th.col B
+      th.col C
+      th.col D
+      th.col S
+  tbody
+    - @statuses.each do |s|
+      tr
+        th= s.name
+        td= s.h
+        td= s.a
+        td= s.b
+        td= s.c
+        td= s.d
+        td= s.s
+
+
