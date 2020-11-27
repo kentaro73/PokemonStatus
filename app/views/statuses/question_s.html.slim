@@ -4,6 +4,11 @@
   .mb-3
   p.question_s= "#{@status.name}"
 
-  p.answer_s= "#{@answer_s}"
+  .answer
+    button 答え確認 
+    p.answer_s= "#{@answer_s}"
 
-  p= link_to "次へ", "/question_s"
+  .mt-3
+    p 5秒でページが更新されます
+
+
