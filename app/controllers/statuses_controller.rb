@@ -1,4 +1,6 @@
 class StatusesController < ApplicationController
+  before_action :authenticate_user!
+  
   def index
     @statuses = Status.all
   end

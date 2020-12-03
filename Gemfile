@@ -24,6 +24,10 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'slim-rails'
 gem 'html2slim'
 gem 'bootstrap'
+gem 'devise'
+gem 'devise-bootstrap-views'
+gem 'devise-i18n-bootstrap'
+gem 'devise-i18n-views'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
