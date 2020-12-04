@@ -2,7 +2,8 @@ class StatusesController < ApplicationController
   before_action :authenticate_user!
   
   def index
-    @statuses = Status.all
+    @q = Status.ransack(params[:q])
+    @statuses = @q.result
   end
 
   def new

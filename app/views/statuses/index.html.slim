@@ -7,17 +7,16 @@
 .mb-3
 
 
-
 table.table.table-hover.table-dark
   thead
     tr
-      th.col ポケモン
-      th.col H
-      th.col A
-      th.col B
-      th.col C
-      th.col D
-      th.col S
+      th.col= sort_link(@q, "ポケモン")
+      th.col= sort_link(@q, :h) 
+      th.col= sort_link(@q, :a) 
+      th.col= sort_link(@q, :b) 
+      th.col= sort_link(@q, :c) 
+      th.col= sort_link(@q, :d) 
+      th.col= sort_link(@q, :s)
   tbody
     - @statuses.each do |s|
       tr

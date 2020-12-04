@@ -28,6 +28,7 @@ gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'devise-i18n-bootstrap'
 gem 'devise-i18n-views'
+gem 'ransack'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
